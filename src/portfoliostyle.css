@@ -1,0 +1,139 @@
+/* Reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #050505;
+}
+
+.sidebar img.first {
+  width: 200px;
+}
+
+.sidebar a {
+  color: white;
+  padding: 16px;
+  font-size: larger;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar a:hover {
+  opacity: 0.5;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+a {
+  padding: 20px;
+  width: 100px;
+}
+
+/* Main content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+/* Images */
+.picture {
+  width: 1000px;
+  display: block;
+  margin: 20px auto;
+}
+
+.picture1 {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Titles */
+.title {
+  margin-left: 350px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Intro text sections */
+.intro {
+  margin-left: 350px;
+  margin-right: 150px;
+  padding-left: 20px;
+  text-align: justify;
+  display: block;
+}
+
+/* Skill bars */
+.container {
+  width: 70%;
+  background-color: #090909;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding: 5px 0;
+  color: white;
+}
+
+.web { width: 40%; background-color: #615e5e; }
+.video { width: 50%; background-color: #615e5e; }
+.paint { width: 65%; background-color: #615e5e; }
+
+/* Forms */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #6c4c5f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #7f4c75;
+}
+
+/* Previews for interest images */
+.preview {
+  display: inline-block;
+  width: 250px;
+  margin-right: 100px;
+  vertical-align: top;
+  color: #050505;
+}
