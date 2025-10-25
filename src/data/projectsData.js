@@ -1,4 +1,4 @@
-import { Code, Movie, Movie2, rock, Tictactoe, book, book2, bus, quiz } from "../images/images";
+import { Movie, Movie2, rock, Tictactoe, book, book2, bus, quiz } from "../images/images";
 
 // Your real projects — images already imported in images.js
 export const projects = [
