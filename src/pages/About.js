@@ -1,5 +1,5 @@
 import React from "react";
-import "../portfoliostyle.css";
+import "../styles/about.css";
 import { Code, Intern1 } from "../images/images";
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
               <div className="skill-card">
                 <div className="skill-name">Web Development</div>
                 <div className="skill-bar-background">
-                  <div className="skill-bar-fill" style={{ width: "40%" }}>40%</div>
+                  <div className="skill-bar-fill" style={{ width: "70%" }}>70%</div>
                 </div>
               </div>
               <div className="skill-card">
@@ -39,9 +39,21 @@ const About = () => {
                 </div>
               </div>
               <div className="skill-card">
-                <div className="skill-name">Painting</div>
+                <div className="skill-name">C Programming</div>
                 <div className="skill-bar-background">
                   <div className="skill-bar-fill" style={{ width: "65%" }}>65%</div>
+                </div>
+              </div>
+              <div className="skill-card">
+                <div className="skill-name">Python</div>
+                <div className="skill-bar-background">
+                  <div className="skill-bar-fill" style={{ width: "55%" }}>55%</div>
+                </div>
+              </div>
+              <div className="skill-card">
+                <div className="skill-name">Databases</div>
+                <div className="skill-bar-background">
+                  <div className="skill-bar-fill" style={{ width: "50%" }}>50%</div>
                 </div>
               </div>
             </div>

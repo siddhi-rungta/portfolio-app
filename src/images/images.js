@@ -16,6 +16,7 @@ import quiz from "./quiz.png";
 import bus from "./bus.png";
 import book from "./book1.png";
 import book2 from "./book2.png";
+import front from "./front.png";
 
 export {
   Main,
@@ -35,5 +36,6 @@ export {
   quiz,
   bus,
   book,
-  book2
+  book2,
+  front,
 };

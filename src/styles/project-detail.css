@@ -1,0 +1,54 @@
+/* Project detail page styles */
+.project-detail-page .detail-header {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+}
+.project-detail-page .detail-header h1 {
+  margin: 12px 0 6px 0;
+  font-size: 2.6rem;
+  color: #1a365d;
+}
+.project-detail-page .detail-header .subtitle {
+  color: #4a5568;
+  margin: 0 0 8px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-primary { background: linear-gradient(90deg,#4299e1,#667eea); color: #fff; }
+.btn-outline { border: 1px solid #667eea; color: #667eea; background: transparent; padding: 8px 12px; margin-left: 10px; }
+.btn-secondary { background: #f1f5f9; color: #1a365d; border: 1px solid #e2e8f0; }
+
+.project-detail {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+.project-media { flex: 0 0 520px; }
+.project-detail-image { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); display: block; }
+.project-gallery { display: flex; gap: 10px; margin-top: 12px; }
+.project-detail-image-small { width: 120px; height: 80px; object-fit: cover; border-radius: 8px; }
+
+.project-detail-meta { flex: 1; min-width: 260px; }
+.project-details { color: #333; line-height: 1.7; margin-bottom: 18px; }
+.tech-list ul { display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:8px 0 16px 0; list-style:none; }
+.tech-chip { background:#eef2ff; color:#2d4a8c; padding:6px 10px; border-radius:999px; font-weight:600; font-size:0.9rem; }
+.project-links { display:flex; gap:10px; margin-bottom: 18px; }
+.back-link { margin-top:12px; }
+
+.image-placeholder { width:100%; height:320px; display:flex; align-items:center; justify-content:center; background:#f1f5f9; border-radius:12px; color:#667; }
+
+@media (max-width: 900px) {
+  .project-media { flex: 1 1 100%; }
+  .project-detail { flex-direction: column; }
+  .project-detail-image-small { width: 90px; height: 60px; }
+}
