@@ -1,48 +1,55 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import Footer from "../components/Footer";
 import "../portfoliostyle.css";
+import { Code, Intern1 } from "../images/images";
 
-function About() {
+const About = () => {
   return (
-    <div>
-      <Sidebar />
-      <div className="title">
-        <br /><br /><br />
-        <h1>About Me</h1>
-        <hr style={{ width: "200px", color: "black" }} align="left" />
-      </div>
+    <div className="main-content">
+      <section className="about-section">
+        <div className="about-left">
+          <img src={Intern1} alt="Internship" className="about-picture" />
+          <img src={Code} alt="Code" className="about-picture about-picture-gap" />
+        </div>
+        <div className="about-right">
+          <h1>About Me</h1>
+          <p>
+            Hello! I'm Siddhi Rungta, currently a <strong>4th-year Computer Science Engineering student</strong>.
+            My journey in tech started in Grade 11 when I chose Computer Science. I am passionate about web development, design, and creating
+            engaging digital experiences.
+          </p>
+          <p>
+            I am currently pursuing a <strong>6-month internship at NVIDIA</strong> as a Tools Development Intern starting from
+            <strong> July 14</strong>. During this internship, I am gaining hands-on experience in developing efficient tools and improving
+            software workflows.
+          </p>
 
-      <div className="intro">
-        <p style={{ fontSize: "large" }}>
-          🎂 <span style={{ fontSize: "15px" }}>05/06/2005</span><br/>
-          I'm Siddhi Rungta, a passionate 2nd-year Computer Science Engineering student at Jain Deemed-to-be University. 
-          My journey in the world of technology began in 2020 when I was in grade 11 by choosing computer science as my subject, and since then, I've been exploring the vast and exciting 
-          realm of computer science. I am currently in my 4th semester pursuing a Bachelor's degree in Computer Science and Engineering.
-          Growing up, my fascination with computers led me to discover my love for creating and designing. I have always been drawn to 
-          the endless possibilities that computer science offers in terms of creativity. Currently, I am diving into the dynamic world of web development. 
-          I am honing my skills in creating responsive and visually appealing websites.
-        </p>
-      </div>
-
-      <div className="title">
-        <h2>My Skills</h2>
-      </div>
-
-      <div className="container intro">
-        <p>Web Development</p>
-        <div className="container"><div className="skills web">40%</div></div>
-
-        <p>Video Editing</p>
-        <div className="container"><div className="skills video">50%</div></div>
-
-        <p>Painting</p>
-        <div className="container"><div className="skills paint">65%</div></div>
-      </div>
-
-      <Footer />
+          <div className="skills-section">
+            <h2>My Skills</h2>
+            <div className="skills-container">
+              <div className="skill-card">
+                <div className="skill-name">Web Development</div>
+                <div className="skill-bar-background">
+                  <div className="skill-bar-fill" style={{ width: "40%" }}>40%</div>
+                </div>
+              </div>
+              <div className="skill-card">
+                <div className="skill-name">Video Editing</div>
+                <div className="skill-bar-background">
+                  <div className="skill-bar-fill" style={{ width: "50%" }}>50%</div>
+                </div>
+              </div>
+              <div className="skill-card">
+                <div className="skill-name">Painting</div>
+                <div className="skill-bar-background">
+                  <div className="skill-bar-fill" style={{ width: "65%" }}>65%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
-}
+};
 
 export default About;

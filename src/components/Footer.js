@@ -1,18 +1,20 @@
 import React from "react";
 import "../portfoliostyle.css";
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div className="container intro" style={{ backgroundColor: "#f2f2f2" }}>
-      <center>
-        <div className="footer">
-          <a href="https://www.facebook.com/siddhi.rungta.526/"><i className="fa fa-facebook-official" style={{ fontSize: "30px" }}></i></a>
-          <a href="https://www.instagram.com/siddhs__/"><i className="fa fa-instagram" style={{ fontSize: "30px" }}></i></a>
-          <a href="https://www.linkedin.com/in/siddhi-rungta-281bb3253/"><i className="fa fa-linkedin" style={{ fontSize: "30px" }}></i></a>
+    <footer className="footer-container">
+      <div className="footer-content">
+        <div className="footer-social">
+          <a href="https://www.facebook.com/siddhi.rungta.526/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
+          <a href="https://www.instagram.com/siddhs__/" target="_blank" rel="noreferrer"><FaInstagram /></a>
+          <a href="https://www.linkedin.com/in/siddhi-rungta-281bb3253/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
         </div>
-      </center>
-    </div>
+        <p className="footer-text">© {new Date().getFullYear()} Siddhi Rungta. All Rights Reserved.</p>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

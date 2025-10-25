@@ -1,23 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import mainImage from "../images/main.jpg";
-import "font-awesome/css/font-awesome.min.css";
+import React, { useState } from "react";
 import "../portfoliostyle.css";
+import { FaHome, FaUser, FaHeart, FaBriefcase, FaEnvelope, FaBars } from "react-icons/fa";
 
-function Sidebar() {
+const Sidebar = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleSidebar = () => setOpen(!open);
+
   return (
-    <div className="sidebar">
-      <img className="first" src={mainImage} alt="Main" />
-      <nav>
-        <ul>
-          <li><Link to="/"><i className="fa fa-home" style={{ fontSize: "40px" }}></i></Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/interest">Interest</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-    </div>
+    <>
+      <div className={`sidebar ${open ? "open" : ""}`}>
+        <img className="first" src={require("../images/main.jpg")} alt="Profile" />
+        <nav>
+          <ul>
+            <li><a href="/"><FaHome /> Home</a></li>
+            <li><a href="/about"><FaUser /> About</a></li>
+            <li><a href="/interest"><FaHeart /> Interest</a></li>
+            <li><a href="/internship"><FaBriefcase /> Internship</a></li>
+            <li><a href="/contact"><FaEnvelope /> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={toggleSidebar}>
+        <FaBars />
+      </div>
+
+      {/* Overlay */}
+      {open && <div className="overlay show" onClick={toggleSidebar}></div>}
+    </>
   );
-}
+};
 
 export default Sidebar;
